@@ -19,6 +19,8 @@ public class indexController {
     @RequestMapping("/show")
     public ModelAndView show(ModelAndView modelAndView) {
         modelAndView.setViewName("show");
+        modelAndView.getModel().put("show","weqqw");
+        modelAndView.addObject("show2","dddd");
         return modelAndView;
     }
 }
